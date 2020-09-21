@@ -1,0 +1,17 @@
+Instala sequelize
+const Sequelize = require('sequelize');
+
+Instancia sequelize
+const sequelize = new Sequelize('mysqlroot@localhost3306clase49');
+
+sequelize.query('SELECT  FROM bandas', 
+    { type sequelize.QueryTypes.SELECT})
+    .then( bandas = {
+        console.log(bandas);
+    });
+
+sequelize.query('INSERT INTO bandas (nombre, integrantes, fecha_inicio, fecha_separacion, pais) VALUES (, , , , )',
+    {replacements [Un artista nuevo, 1, 1999, null, Argentina]})
+    .then( resultados = {
+        console.log(resultados);
+    });
